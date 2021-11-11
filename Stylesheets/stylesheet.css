@@ -1,63 +1,152 @@
+/*Nullstiller det som evt blir lagt inn autmatisk */
 *{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
+}
+
+/* Margin til alle div-ene*/
+div{
+    padding: 2.5rem;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+footer{
+    height: 10vh;
 }
 
 
 
-/* Screens < 600px */
 
 
+/*---- Screens < 600px ----*/
 
+/*---Header---*/
+
+/*Styling for header */
 header{
    background-color: #ffd500;
-   height: 10vh;
+   height: 5vh;
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
 }
 
+/*Styling for navigasjonsbaren */
 header ul{
     
-    margin-left: 2.5vh;
-    margin-right: 2.5vh;
-    padding-top: 2.5vh;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     text-align: center;
-    list-style-type: none;
-    
+    overflow: hidden; 
 }
 
 
 header li{
-    display: inline-block;
     text-align: center;
     display: inline;
-    padding: 1vh;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    list-style-type: none;
 }
 
 header li a{
-    transition: all;
-    color: white;
+    color: black;
     padding: 1rem;
-    
+    text-decoration: none;
 }
 
-a:hover{
+header a:hover{
 background: grey;
 }
 
 
 
 
+/*----Accessibility---- */
+
+/* styling av tekst-boksene*/
+#forklaring1{
+    align-items: center;
+    align-content: center;
+
+    /*legger til flexbox for å endre plasseringen på bildene og teksten*/
+    display: flex;
+    flex-direction: row-reverse;
+    
+    
+}
+
+/*Styling av bilder */
+#forklaring1 img{
+    width: 200px;
+    height: 100px;
+    padding: 2rem;
+}
+
+
+/*----Topical information----*/
+
+#tekst p{
+    padding-bottom: 1rem;
+}
+
+/*Styling av kildeliste*/
+
+#kilder li{
+    list-style-type: none;
+}
+
+#kilder li a{
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+#kilder li a:hover{
+    background-color: #ffd500;
+    tab-size: 5px;
+}
 
 
 
 
 
-/* Screens 600px –960 px */
+
+/* ---Screens 600px –960 px ----*/
+
 @media screen and (min-width: 600px){
+
+/*---Header---*/
+
+/*Styling for navigasjonsbaren */
 header{
-    height: 10vh;
+    height: 7vh;
+}
+
+header ul{
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    overflow: hidden;
+}
+
+header li a{
+    font-size: large;
+}
+
+
+/*---Accessibility--- */
+
+/*Styling av bilder*/
+#forklaring1 img{
+    width: 300px;
+    height: 200px;
 }
 
 }
@@ -68,10 +157,39 @@ header{
 
 
 
-/* Screens >960 px */
+/* ---Screens >960 px--- */
 
 @media screen and (min-width: 960px){
+
+/*---Header---*/
+
+/*Styling for navigasjonsbaren */
 header{
-    height: 10vh;
+    height: 9vh;
 }
+
+header ul{
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+header li a{
+    font-size: larger;
+}
+
+
+/*---Accessibility---*/
+
+/*Styling av bilder */
+#forklaring1 img{
+    width: 400px;
+    height: 300px;
+}
+
+
 }
