@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+/* Screens < 600px */
+
+
+
+.navigasjon{
+   background-color: #ffd500;
+   height: 10vh;
+}
+
+
+
+
+/* Screens 600px –960 px */
+
+
+
+
+
+
+
+/* Screens >960 px */
