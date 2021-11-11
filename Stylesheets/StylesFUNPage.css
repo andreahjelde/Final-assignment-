@@ -3,6 +3,17 @@
     z-index: 2;
 }
 
+li {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    size: 2;
+}
+
 body{
     margin: auto;
     max-width: 50%;
@@ -30,8 +41,9 @@ p{
     z-index: -1;
 }
 
-#lyd {
+#lyd:hover {
     margin: 10px;
     padding: 0;
     grid-area: right;
 }
+
