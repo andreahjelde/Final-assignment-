@@ -10,16 +10,57 @@
 
 
 
-.navigasjon{
+header{
    background-color: #ffd500;
    height: 10vh;
+}
+
+header ul{
+    
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    padding-top: 2.5vh;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+
+header li{
+    display: inline-block;
+    text-align: center;
+    display: inline;
+    padding: 1vh;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+header li a{
+    transition: all;
+    color: white;
+    padding: 1rem;
+    
+}
+
+a:hover{
+background: grey;
 }
 
 
 
 
 
+
+
+
+
 /* Screens 600px –960 px */
+@media screen and (min-width: 600px){
+header{
+    height: 10vh;
+}
+
+}
 
 
 
@@ -28,3 +69,9 @@
 
 
 /* Screens >960 px */
+
+@media screen and (min-width: 960px){
+header{
+    height: 10vh;
+}
+}
