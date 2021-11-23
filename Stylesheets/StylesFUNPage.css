@@ -1,53 +1,53 @@
 * {
-    box-sizing: border-box;
-    z-index: 2;
-}
-
-li {
-    display: inline-block;
-    margin: 10px;
+    margin: 0;
     padding: 0;
-    text-align: center;
+
 }
 
-img {
+header{
+    background: linear-gradient(to left, orange , yellow, green, cyan, blue, violet);
+
+    height: fit-content;
+    min-height: 2rem;
+ 
+    /*Gjør at navigasjonsbaren følger med når man blar seg opp/ned på siden*/
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+ header ul{                       /* bruker flexbox for å plassere knappene til navigasjonsboksen*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header li{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  
+    list-style-type: none;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+header li a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.8rem;
     
 }
 
-body{
-    margin: auto;
-    max-width: 50%;
+header a:hover{
+    background-color: black;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-p{
-    margin: auto;
-    padding: 10px;
-    align-content: center;
-    max-width: 70ch;
-}
 
-#textcontent{
-    background: rgba(0, 0, 0, 0.7);
-}
-
-#video {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-#lyd {
-    margin: 10px;
-    padding: 0;
-    grid-area: right;
-}
-
-/* Screens 600px –960 px */
+/* Screens 600px –960px */
 
 
 
@@ -62,4 +62,4 @@ p{
 
 
 
-/* Screens < 600px */
+/* Screens < 500px */
