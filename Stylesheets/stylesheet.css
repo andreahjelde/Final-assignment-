@@ -8,17 +8,24 @@
 
 /* Screens < 600px */
 
-
+main{
+   
+}
 
 .navigasjon{
    background-color: #ffd500;
-   height: 10vh;
+   
 }
 
 
 
+.tek-og-samf{
+background-color: #ffd500;
+}
 
-
+.fun{
+background-color: azure;
+}
 /* Screens 600px –960 px */
 
 
