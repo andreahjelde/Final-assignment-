@@ -56,7 +56,6 @@ header{
    position: sticky;
    position: -webkit-sticky;
    top: 0;
-
  
 }
 
@@ -88,6 +87,84 @@ background-color: black;
 color: white;
 }
 
+
+/*----HOME-PAGE----*/
+
+
+
+.introduksjon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+.forhåndsvisning:nth-child(2)
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color:white;
+}
+
+
+.forhåndsvisning:nth-child(3)
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    background-color:#ffd500;
+}
+.forhåndsvisning:nth-child(4)
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color:white;
+}
+.forhåndsvisning:nth-child(5)
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    background-color:#ffd500;
+}
+
+
+
+
+
+
+/*----Reflection-Page----*/
+.introduksjon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.konklusjon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*----Bildestyling av OsloMet----*/
+.def-student img{
+    width: 300px;
+    height: 350px;
+    padding: 1rem;
+}
+
+.def-elev img{
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+}
 
 
 
@@ -178,13 +255,6 @@ color: white;
 
 
 
-
-
-.tek-og-samf{
-background-color: #ffd500;
-}
-
-
 /* ---Screens 600px –960 px ----*/
 
 @media screen and (min-width: 600px){
@@ -270,5 +340,4 @@ header{
     width: 400px;
     height: 300px;
 }
-
 
