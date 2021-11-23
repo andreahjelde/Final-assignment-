@@ -133,7 +133,7 @@ border-bottom: solid 2px black;
 
 
 /*----Reflection-Page----*/
-.tekst2:nth-child(2)
+.tekst2:nth-child(1)
 {
     display: flex;
     justify-content:center;
@@ -141,7 +141,7 @@ border-bottom: solid 2px black;
     flex-direction: row-reverse;
     background-color:white;
 }
-.tekst2:nth-child(3)
+.tekst2:nth-child(2)
 {
     display: flex;
     justify-content:center;
