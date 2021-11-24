@@ -91,6 +91,7 @@ border-bottom: solid 2px black;
     justify-content: center;
     align-items: center;
     flex-direction: column;  
+    background-color: white;
 
 }
 .introduksjon h1{
@@ -118,7 +119,7 @@ border-bottom: solid 2px black;
     justify-content:center;
     align-items: center;
     flex-direction: row-reverse;
-    background-color:white;
+    background-color:#ffd500
 }
 
 
@@ -128,7 +129,7 @@ border-bottom: solid 2px black;
     justify-content:center;
     align-items: center;
     flex-direction: row;
-    background-color:#ffd500;
+    background-color:white;
 }
 .forhåndsvisning:nth-child(4)
 {
@@ -136,7 +137,7 @@ border-bottom: solid 2px black;
     justify-content:center;
     align-items: center;
     flex-direction: row-reverse;
-    background-color:white;
+    background-color:#ffd500
 }
 .forhåndsvisning:nth-child(5)
 {
@@ -144,7 +145,7 @@ border-bottom: solid 2px black;
     justify-content:center;
     align-items: center;
     flex-direction: row;
-    background-color:#ffd500;
+    background-color:white;
 }
 
 /* Justering av bildene til forhåndsvisningene */
@@ -152,7 +153,7 @@ border-bottom: solid 2px black;
     width: 200px;
 }
 
-
+/*----tekst----*/
 
 
 /*----Reflection-Page----*/
@@ -178,7 +179,6 @@ border-bottom: solid 2px black;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .konklusjon{
@@ -188,38 +188,48 @@ border-bottom: solid 2px black;
     flex-direction: column;
     background-color: white;
 }
+
 /*Styling av tekst*/
-.introduksjon2 h1{
+.introduksjon2 h1 {
     text-align: center;
     padding-top: 3rem;
-
 }
-.introduksjon2 p{
-    text-align: center;
+
+.introduksjon2 p {
+    text-align: left;
     padding-bottom: 7rem;
+    max-width: 20rem;
 }
 
 .konklusjon h2{
     text-align: center;
     padding-top: 3rem;
-
 }
+
 .konklusjon p{
     text-align: center;
     padding-bottom: 7rem;
 }
 
+.tekst2:nth-child(2){
+    text-align: left;
+}
+.tekst2:nth-child(1){
+    text-align: right;
+}
+
+/* Bildestyling av tekstbilder*/
+.refleksjon img:nth-child(2){
+    width: 400px;
+    height: 400px;
+    padding: 3rem; 
+}
 
 /*Bildestyling av OsloMet*/
-.refleksjon img:nth-child(2){
-width: 400px;
-height: 400px;
-padding: 3rem; }
-
 .introduksjon2 img:nth-child(2){
-    width:350px;
+    width: 350px;
     height: 400px;
-    padding: 2rem
+    padding: 2rem;
 }
 
 
