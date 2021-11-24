@@ -159,13 +159,22 @@ border-bottom: solid 2px black;
     padding: 1rem;
 }
 
-/*justering av tekst*/
-.forhåndsvisning p{
-    text-align: justify;
+/*justering av tekst til forhåndsvisningene*/
+.for-tekst1 p{
+    text-align: left;
     max-width: 30rem;
     min-width: 20rem;
 }
-.tekstodd {
+.for-tekst1 h2{
+    text-align: left;
+}
+
+.for-tekst2 p{
+    text-align: right;
+    max-width: 30rem;
+    min-width: 20rem;
+}
+.for-tekst2 h2{
     text-align: right;
 }
 
@@ -422,9 +431,7 @@ header{
      list-style-type: none;
  }
  
-
  
-
 
 
 /*---Accessibility--- */
