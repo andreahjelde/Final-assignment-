@@ -159,34 +159,25 @@ border-bottom: solid 2px black;
     border-top:7px dashed #3AB5BD;
 }
 
-/*Justering på teksten*/
-.for-tekst1 p{
-    text-align: center;
-    max-width: 15rem;
-    min-width: 10rem;
-    
-}
-.for-tekst1 h2{
-    text-align: center;
-}
+
 
 /*justering av tekst til forhåndsvisningene*/
 .for-tekst1 p{
-    text-align: left;
+    text-align: center;
     max-width: 30rem;
     min-width: 20rem;
 }
 .for-tekst1 h2{
-    text-align: left;
+    text-align: center;
 }
 
 .for-tekst2 p{
-    text-align: right;
+    text-align: center;
     max-width: 30rem;
     min-width: 20rem;
 }
 .for-tekst2 h2{
-    text-align: right;
+    text-align: center;
 }
 
 /*størrelsen på bildene*/
@@ -499,19 +490,21 @@ header{
 
 
 /*justering av tekst til forhåndsvisningene*/
+/* /*Justering på teksten*/
 .for-tekst1 p{
     text-align: left;
-    max-width: 30rem;
-    min-width: 20rem;
+    max-width: 15rem;
+    min-width: 10rem;
+    
 }
 .for-tekst1 h2{
     text-align: left;
 }
-
 .for-tekst2 p{
     text-align: right;
-    max-width: 30rem;
-    min-width: 20rem;
+    max-width: 15rem;
+    min-width: 10rem;
+    
 }
 .for-tekst2 h2{
     text-align: right;
