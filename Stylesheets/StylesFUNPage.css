@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -9,11 +9,6 @@ header{
 
     height: fit-content;
     min-height: 2rem;
- 
-    /*Gjør at navigasjonsbaren følger med når man blar seg opp/ned på siden*/
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
 }
 
  header ul{                       /* bruker flexbox for å plassere knappene til navigasjonsboksen*/
@@ -24,8 +19,8 @@ header{
 }
 
 header li{
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     margin-right: 5%;
     margin-left: 5%;
   
@@ -38,6 +33,7 @@ header li a{
     color: whitesmoke;
     text-decoration: none;
     padding: 0.8rem;
+    font-size: 1.5em;
 }
 
 header a:hover{
@@ -64,91 +60,23 @@ header a:hover{
 
 .sporsmaal {
     width: 100%;
-    font-size: 2.5em;
     text-align: center;
     padding: 25px;
-    border-width:4px;
+    border-width:4px; /*Border kode hentet fra stackoverflow fra bruker: user5089931*/
     border-style: solid;
     border-color: black;
 }
 
-
-
-/*
-.item1 { grid-area: overskrift; }
-.item2 { grid-area: imgalt; }
-.item3 { grid-area: overskrift2; }
-.item4 { grid-area: imgalt2; }
-
-.grid-container {
-display: grid;
-grid-template-areas:
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift2 overskrift2'
-'imgalt2 imgalt2'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt'
-'overskrift overskrift'
-'imgalt imgalt' ;
-
-grid-gap: 10px;
-padding: 10px;
+p {
+    font-size: 2.5em;
 }
-
-.grid-container > div.item1 {
-    padding: 0;
-    font-size: 0;
-}
-
-.grid-container > div.item2 {
-    
-    
-}
-*/
 
 img {
     width: 65%;
     height: auto;
 }
 
-
-
-/* Screens 600px –960px */
-
-
-
-
-
-
-
-/* Screens >960 px */
-
-
-
-
-
-
-/* Screens < 500px */
+.resultat{
+    padding-top: 50rem;
+    padding-bottom: 50rem;
+}
