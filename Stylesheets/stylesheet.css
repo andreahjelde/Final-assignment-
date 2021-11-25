@@ -613,6 +613,21 @@ header{
 /* ---Screens >960 px--- */
 @media screen and (min-width: 960px){
 
+/*----Home-Page---*/
+
+/*Justerer bredden på teksten til forhåndsvisningene*/
+.for-tekst1 p{
+    max-width: 40rem;
+    min-width: 30rem;
+}
+.for-tekst2 p{
+    max-width: 40rem;
+    min-width: 30rem;
+}
+
+
+
+
 /*---Accessibility---*/
 #innledning p{
     margin-right: 7rem;
