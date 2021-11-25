@@ -82,37 +82,38 @@ border-bottom: solid 2px black;
 }
 
 
-/*----HOME-PAGE----*/
 
 
-/*Introduksjon*/
 
-/*justering av plassering*/
+/*----Home-Page----*/
+
+ /*justering av plassering*/
 .introduksjon{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;  
-    background-color: white;
+    background-color: #E46D05;
+    border-top: 7px dashed #ffd500;
+    border-bottom: 7px dashed #416679;
 }
 
 /*styling av tekst*/
 .introduksjon h1{
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
-    font-size: 250%;
+    font-size: 300%;
 }
 
 .introduksjon p{
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 10rem;
-    max-width: 600px;
-    min-width: 400px;
-    
+    max-width: 400px;
+    min-width: 200px;   
 }
-    
+
 /*styling av bildet*/  
 
 .introduksjon img{
@@ -120,56 +121,72 @@ border-bottom: solid 2px black;
     
 }
 
-/* justering av forhåndsvisningene*/
 
-.forhåndsvisning:nth-child(2){
+ /*Justering av plassering på elementene til forhåndsvisningen*/
+ .forhåndsvisning:nth-child(2){
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
-    flex-direction: row-reverse;
-    background-color:#ffd500
+    background-color:#416679;
+    border-top: 7px dashed #E46D05;
+    border-bottom: 7px dashed #29AC68;
 }
-
 
 .forhåndsvisning:nth-child(3){
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row;
-    background-color:white;
+    flex-direction: column-reverse;
+    background-color:#29AC68;
+    border-top: 7px dashed #416679;
+    border-bottom: 7px dashed #3AB5BD;
 }
+
 .forhåndsvisning:nth-child(4){
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row-reverse;
-    background-color:#ffd500
+    flex-direction: column;
+    background-color:#3AB5BD;
+    border-top:7px dashed #29AC68;
+    border-bottom: 7px dashed #A13598;
+
 }
 .forhåndsvisning:nth-child(5){
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row;
-    background-color:white;
+    flex-direction: column-reverse;
+    background-color:#A13598;
+    border-top:7px dashed #3AB5BD;
 }
 
-/* Justering av bildene til forhåndsvisningene */
+/*Justering på teksten*/
+.for-tekst1 p{
+    text-align: center;
+    max-width: 15rem;
+    min-width: 10rem;
+    
+}
+.for-tekst1 h2{
+    text-align: center;
+}
+
+.for-tekst2 p{
+    text-align: center;
+    max-width: 15rem;
+    min-width: 10rem;
+}
+.for-tekst2 h2{
+    text-align: center;
+}
+
+/*størrelsen på bildene*/
 .forhåndsvisning img{
-    width: 200px;
+    width: 250px;
     padding: 1rem;
 }
-
-/*justering av tekst*/
-.forhåndsvisning p{
-    text-align: justify;
-    max-width: 30rem;
-    min-width: 20rem;
-}
-.tekstodd {
-    text-align: right;
-}
-
-
 
 
 /*----Reflection-Page----*/
@@ -180,6 +197,7 @@ border-bottom: solid 2px black;
 /*Plassering av elementene*/
 .introduksjon2{
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     background-color: #ffd500;
@@ -187,19 +205,21 @@ border-bottom: solid 2px black;
 
 /*Styling av tekst*/
 .introduksjon2 h1 {
-    text-align: right;
-    padding-top: 3rem;
-    max-width: 20rem;
+    text-align: center;
+    padding-top: 0rem;
+     max-width: 20rem;
+   
 }
 
 .introduksjon2 p {
-    text-align: right;
-    padding-bottom: 7rem;
+    text-align: justify;
+    padding-top: 0.5em; ;
+    padding-bottom: 3rem;
     max-width: 20rem;
 }
 
 /*Styling av forsidebilde*/
-.introduksjon2 img:nth-child(2){
+.introduksjon2 img{
     width: 300px;
     height: 375px;
 }
@@ -212,7 +232,7 @@ border-bottom: solid 2px black;
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     background-color:white;
 }
 .refleksjon:nth-child(3)
@@ -220,37 +240,36 @@ border-bottom: solid 2px black;
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column-reverse;
     background-color:white;
 }
 
 /*tekststyling*/
 .ref-tekst1 p{
-    text-align: left;
-    max-width: 30rem;
+    text-align: center;
+    max-width: 25rem;
     min-width: 10rem;
 }
 .ref-tekst1 h2 {
-    text-align: left;
+    text-align: center;
 }
 
 .ref-tekst2 p{
-    text-align: right;
-    max-width: 30rem;
+    text-align: center;
+    max-width: 25rem;
     min-width: 10rem;
 }
 .ref-tekst2 h2 {
-    text-align: right;
+    text-align: center;
 }
+
 
 
 /*styling av tekstbilder*/
 .refleksjon img {
-    width: 200x;
+    width: 50x;
     height: 300px;
     display: block; 
-    
-
 }
 
 
@@ -270,35 +289,16 @@ border-bottom: solid 2px black;
 .konklusjon h2{
     text-align: center;
     padding-top: 5rem;
+    padding-bottom: 0.5rem;
     
 }
 
 .konklusjon p{
     text-align: center;
     padding-bottom: 7rem;
-    max-width: 30rem;
+    max-width: 25rem;
     min-width: 10rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*----ACCESSIBILITY-PAGE---- */
@@ -422,22 +422,139 @@ header{
      list-style-type: none;
  }
  
-
  
+/*----HOME-PAGE----*/
 
+/*Introduksjon*/
 
-
-/*---Accessibility--- */
-
-/*Styling av bilder*/
-#forklaring1 img{
-    width: 300px;
-    height: 200px;
-}
+/*justering av plassering*/
+.introduksjon{
+    background-color: white;
+    border:none;
 }
 
+/*styling av tekst*/
+.introduksjon h1{
+    padding-top: 3rem;
+    font-size: 250%;
+}
+
+.introduksjon p{
+    max-width: 600px;
+    min-width: 400px;
+}
+    
+
+/* justering av forhåndsvisningene*/
+
+.forhåndsvisning:nth-child(2){
+    flex-direction: row-reverse;
+    background-color:#ffd500;
+    border:none;
+}
+
+.forhåndsvisning:nth-child(3){
+    flex-direction: row;
+    background-color:white;
+    border:none;
+}
+
+.forhåndsvisning:nth-child(4){
+    flex-direction: row-reverse;
+    background-color:#ffd500;
+    border:none;
+}
+.forhåndsvisning:nth-child(5){
+    flex-direction: row;
+    background-color:white;
+    border:none;
+}
 
 
+
+/*justering av tekst til forhåndsvisningene*/
+.for-tekst1 p{
+    text-align: left;
+    max-width: 30rem;
+    min-width: 20rem;
+}
+.for-tekst1 h2{
+    text-align: left;
+}
+
+.for-tekst2 p{
+    text-align: right;
+    max-width: 30rem;
+    min-width: 20rem;
+}
+.for-tekst2 h2{
+    text-align: right;
+}
+
+
+
+/*----Reflection-Page----*/
+
+
+/*---Introduksjon---*/
+
+/*Plassering av elementene*/
+.introduksjon2{
+   flex-direction: row;
+   
+}
+
+/*Styling av tekst*/
+.introduksjon2 h1 {
+    text-align: right;
+    padding-top: 0rem; 
+}
+
+.introduksjon2 p {
+    text-align: right;
+    padding-bottom: 7rem;
+    
+}
+
+/*---Hoveddel---*/
+
+/*plassering av elementene*/
+.refleksjon:nth-child(2){
+    flex-direction: row-reverse;
+}
+.refleksjon:nth-child(3){
+   flex-direction: row;
+}
+
+/*tekststyling*/
+.ref-tekst1 p{
+    text-align: left;
+    max-width: 30rem;
+}
+.ref-tekst1 h2 {
+    text-align: left;
+}
+
+.ref-tekst2 p{
+    text-align: right;
+    max-width: 30rem;
+}
+.ref-tekst2 h2 {
+    text-align: right;
+}
+
+
+/*styling av tekstbilder*/
+.refleksjon img {
+    width: 200px;
+}
+
+
+
+
+.konklusjon p{
+    max-width: 30rem;
+}
 
 
 
