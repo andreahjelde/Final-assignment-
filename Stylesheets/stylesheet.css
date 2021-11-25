@@ -166,18 +166,22 @@ border-bottom: solid 2px black;
     text-align: center;
     max-width: 30rem;
     min-width: 20rem;
+    background-color: white;
 }
 .for-tekst1 h2{
     text-align: center;
+    background-color: white;
 }
 
 .for-tekst2 p{
     text-align: center;
     max-width: 30rem;
     min-width: 20rem;
+    background-color: white;
 }
 .for-tekst2 h2{
     text-align: center;
+    background-color: white;
 }
 
 /*størrelsen på bildene*/
