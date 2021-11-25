@@ -499,10 +499,12 @@ header{
     text-align: left;
     max-width: 15rem;
     min-width: 10rem;
+    background-color: #ffd500;
     
 }
 .for-tekst1 h2{
     text-align: left;
+    background-color: #ffd500;
 }
 .for-tekst2 p{
     text-align: right;
