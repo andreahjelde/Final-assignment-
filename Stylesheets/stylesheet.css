@@ -470,6 +470,7 @@ header{
 /*----HOME-PAGE----*/
 
 /*Introduksjon*/
+
 /*justering av plassering*/
 .introduksjon{
     background-color: white;
@@ -512,7 +513,7 @@ header{
     border:none;
 }
 
-/* /*Justering på teksten*/
+/*Justering på teksten*/
 .for-tekst1 p{
     text-align: left;
     max-width: 20rem;
@@ -599,8 +600,8 @@ header{
 
 
 /*-----------------------------------------------------------------------------------*/
-/*----------STORE SKJERMER--------*/
-/* ---Screens >960 px--- */
+                         /*----------STORE SKJERMER--------*/
+                         /* ---Screens >960 px--- */
 @media screen and (min-width: 960px){
 /*---------------Generell styling---------------*/
 h1{
@@ -620,6 +621,7 @@ header li a{
 }
 
 /*----Home-Page---*/
+
 /*Justerer bredden på teksten til forhåndsvisningene*/
 .introduksjon p{
     max-width: 40rem;
@@ -636,7 +638,9 @@ header li a{
 }
 
 /*---------------Reflection-side---------------*/
+
 /*---Introduksjon---*/
+
 /*Plassering av elementene*/
 .introduksjon2{
     flex-direction: row;
@@ -666,7 +670,7 @@ header li a{
     flex-direction: row;
  }
  
- /*tekststyling*/
+ /*Styling av tekst*/
  .ref-tekst1 p{
      text-align: left;
      min-width: 35rem;
