@@ -29,7 +29,8 @@ div{
     padding: 2.5rem;
 }
 
-/*---HEADER / NAVIGASJONSBAR---*/
+/*---HEADER---*/
+
 /*Styling for header */
 header{
    background-color: #ffd500;
@@ -221,7 +222,7 @@ text-decoration: underline;
 .introduksjon2 h1 {
     text-align: center;
     padding-top: 0rem;
-     max-width: 20rem;
+     max-width: 30rem;
    
 }
 
@@ -229,13 +230,14 @@ text-decoration: underline;
     text-align: justify;
     padding-top: 0.5em; ;
     padding-bottom: 3rem;
-    max-width: 20rem;
+    max-width: 30rem;
 }
 
 /*Styling av forsidebilde*/
 .introduksjon2 img{
     width: 300px;
     height: 375px;
+    
 }
 
 /*---Hoveddel---*/
@@ -261,16 +263,18 @@ text-decoration: underline;
 /*tekststyling*/
 .ref-tekst1 p{
     text-align: center;
+    max-width: 25rem;
+    min-width: 10rem;
 }
-
 .ref-tekst1 h2 {
     text-align: center;
 }
 
 .ref-tekst2 p{
     text-align: center;
+    max-width: 25rem;
+    min-width: 10rem;
 }
-
 .ref-tekst2 h2 {
     text-align: center;
 }
@@ -281,7 +285,6 @@ text-decoration: underline;
 .refleksjon img {
     width: 50px;
     height: 300px;
-    display: block; 
 }
 
 /*---Konklusjon---*/
@@ -316,6 +319,8 @@ text-decoration: underline;
 .konklusjon p{
     text-align: center;
     padding-bottom: 7rem;
+    max-width: 25rem;
+    min-width: 10rem;
 }
 
 /*Bildestyling av OsloMet*/
@@ -512,8 +517,8 @@ header{
 /* /*Justering på teksten*/
 .for-tekst1 p{
     text-align: left;
-    max-width: 15rem;
-    min-width: 10rem;
+    max-width: 20rem;
+    min-width: 15rem;
     background-color: #ffd500;
 }
 
@@ -523,13 +528,40 @@ header{
 }
 .for-tekst2 p{
     text-align: right;
-    max-width: 15rem;
-    min-width: 10rem;
+    max-width: 20rem;
+    min-width: 15rem;
     
 }
 .for-tekst2 h2{
     text-align: right;
 }
+
+/*--------------Reflection-Page-------------------*/
+
+
+/*Justering av bredden på tekstene på refleksjonen*/
+.ref-tekst1 p{
+    text-align: center;
+    max-width: 40rem;
+}
+
+.ref-tekst1 h2 {
+    text-align: center;
+}
+
+.ref-tekst2 p{
+    text-align: center;
+    max-width: 40rem;
+}
+
+.ref-tekst2 h2 {
+    text-align: center;
+}
+/*Justering av bredden  på konklusjonssteksten*/
+.konklusjon p{
+    max-width: 40rem;
+}
+
 
 
 /*---------------Accessibility-side---------------*/
@@ -569,8 +601,8 @@ header{
 
 
 /*-----------------------------------------------------------------------------------*/
-                        /*----------STORE SKJERMER--------*/
-                        /* ---Screens >960 px--- */
+/*----------STORE SKJERMER--------*/
+/* ---Screens >960 px--- */
 @media screen and (min-width: 960px){
 /*---------------Generell styling---------------*/
 h1{
@@ -591,6 +623,10 @@ header li a{
 
 /*----Home-Page---*/
 /*Justerer bredden på teksten til forhåndsvisningene*/
+.introduksjon p{
+    max-width: 40rem;
+}
+
 .for-tekst1 p{
     max-width: 40rem;
     min-width: 30rem;
@@ -601,7 +637,7 @@ header li a{
     min-width: 30rem;
 }
 
-/*---------------Reflelction-side---------------*/
+/*---------------Reflection-side---------------*/
 /*---Introduksjon---*/
 /*Plassering av elementene*/
 .introduksjon2{
@@ -611,11 +647,13 @@ header li a{
  /*Styling av tekst*/
  .introduksjon2 h1 {
      text-align: right;
+     max-width: 35rem;
   
  }
  
  .introduksjon2 p {
      text-align: right;
+     max-width: 35rem;
      padding-bottom: 7rem;
      
  }
@@ -633,7 +671,7 @@ header li a{
  /*tekststyling*/
  .ref-tekst1 p{
      text-align: left;
-     max-width: 30rem;
+     min-width: 35rem;
  }
  
  .ref-tekst1 h2 {
@@ -642,7 +680,7 @@ header li a{
  
  .ref-tekst2 p{
      text-align: right;
-     max-width: 30rem;
+     max-width: 35rem;
  }
  
  .ref-tekst2 h2 {
@@ -651,11 +689,11 @@ header li a{
  
  /*styling av tekstbilder*/
  .refleksjon img {
-     width: 200px;
+     width: 300px;
  }
  
  .konklusjon p{
-     max-width: 30rem;
+     max-width: 45rem;
  }
 /*---------------Accessibility---------------*/
 #innledning p{
