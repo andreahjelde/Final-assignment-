@@ -76,6 +76,18 @@ img { /*gjør bredde mindre og høyde til auto for å bevare bildets forhold og 
     padding-bottom: 50rem;
 }
 
-#tiltopp {
+#top { /*skjuler toppen(er ikke nødvendig å skrive)*/
+    display: none;
+}
 
+#knapp {
+    position: fixed; /*får knappen til å følge når man skroller*/
+    text-align: center; /*legger teksten i senter*/
+    width: 100%; /*knappen tar opp */
+    bottom: 0; /*legger knappen i bunn*/
+    background: black /*gir bakgrunnen svart farge*/
+}
+
+#knapp a { /*gjør knappens tekst mer synlig*/
+    color: whitesmoke;
 }
