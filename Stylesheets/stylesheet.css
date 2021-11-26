@@ -75,6 +75,7 @@ border-bottom: solid 2px black;
 
 /*---------------HOME-PAGE---------------*/
 /*---Introduksjon---*/
+
 /*justering av plassering*/
 .introduksjon{
     display: flex;
@@ -101,9 +102,6 @@ border-bottom: solid 2px black;
     
     max-width: 400px;
     min-width: 200px;   
-    
-    /*max-width: 600px;
-    min-width: 400px;  */
 }
 
 /*styling av bildet*/  
@@ -111,7 +109,7 @@ border-bottom: solid 2px black;
     width: 400px;
 }
 
-/* justering av forhåndsvisningene*/
+/* justering av forhåndsvisningene: fargevalg, plassering*/
 .forhåndsvisning:nth-child(2){
     display: flex;
     flex-direction: column;
@@ -242,7 +240,7 @@ text-decoration: underline;
 
 /*---Hoveddel---*/
 
-/*plassering av elementene*/
+/*justering av plassering*/
 .refleksjon:nth-child(2)
 {
     display: flex;
