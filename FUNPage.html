@@ -21,36 +21,44 @@
     </nav>
 </header>
 
+<!--flex konteiner til å holde all teksten og klikkbare bilder/bokser-->
 <body>
-    <div class="flex-container">
-        <div class="sporsmaal">
+    <div class="flex-container"> <!--setter alle spørsmålene til en klasse for felles styling-->
+
+        <div>
             <p>
-                Hvis du skulle spist middag, ville du helst hatt pizza som er alternativet til venstre, eller ville
-                du hatt kylling alternativet til høyre?
+                NB! ikke skroll, trykk på det som passer deg og bildene/teksten vil ta deg videre
             </p>
         </div>
-        <div class="content">
-            <a href="#videreforing1">
-                <!--targetting kode hentet fra https://www.coffeecup.com/help/articles/how-do-i-link-to-different-sections-on-the-same-page-html-editor/-->
+
+        <div class="sporsmaal"> <!--setter alle spørsmålene til en klasse for felles styling-->
+            <p>                 <!--hvert nye spørsmål kommer etter starten av hvver ny class="sporsmaal" og følger samme oppbygging-->
+                Hvis du skulle spist middag, ville du helst hatt pizza som er alternativet til venstre, eller ville
+                du hatt kylling alternativet til høyre? 
+            </p> <!--spørsmålet-->
+        </div>
+        <div class="content"> <!--setter klasse content for styilng til å være forskjellige fra tekst-->
+            <a href="#videreforing1"> <!--refererer til den som er satt til name="videreforing1 lengre ned i koden"-->
+                <!--targetting kode hentet fra https://www.coffeecup.com/help/articles/how-do-i-link-to-different-sections-on-the-same-page-html-editor/ -->
                 <img src="medier/FUNPage/pizza.jpg" 
-                alt="bilde av en forssen pizza i kjøledisken på dagligvarehandelen">
-                <p>
+                alt="bilde av en forssen pizza i kjøledisken på dagligvarehandelen"> <!--alle bilder er fra eget bibliotek-->
+                <p> <!--navn til bildet-->
                     Pizza
                 </p>
             </a>
         </div>
         <div class="content">
-            <a href="#videreforing2">
+            <a href="#videreforing2"> <!--viser til ett nytt spørsmål som er forskjellig fra tidligere-->
                 <img src="medier/FUNPage/kylling.jpg" 
-                alt="bilde av en prior kylling pakke">
+                alt="bilde av flere stekte kyllingvinger på en tallerken">
                 <p>
                     Kylling
                 </p>
             </a>
         </div>
 
-        <div class="sporsmaal">
-            <a name="videreforing1">
+        <div class="sporsmaal"> <!--nytt spørsmål-->
+            <a name="videreforing1"> <!--gjør så href="#videreforing1" fører til denne linja, tallgitt 1, 2, 3 osv nedover-->
                 <p>
                     Men hva om alternativene var pasta og pølser, hvem hadde du valgt?
                 </p>
@@ -68,14 +76,14 @@
         <div class="content">
             <a href="#videreforing4">
                 <img src="medier/FUNPage/polser.jpg" 
-                alt="bilde av en pakke gilde grillpølser">
+                alt="bilde av grillpølser i en hvit bolle">
                 <p>
                     Pølser
                 </p>
             </a>
         </div>
 
-        <div class="sporsmaal">
+        <div class="sporsmaal"><!--nytt spørsmål-->
             <a name="videreforing2">
                 <p>
                     Kanskje valget er vanskeligere mellom en god salat eller en digg fredags-taco?
@@ -85,7 +93,7 @@
         <div class="content">
             <a href="#videreforing5">
                 <img src="medier/FUNPage/salat.jpg" 
-                alt="bilde av kaalhoder fra dagligvarehandelen">
+                alt="bilde av ferdig tacosalat med dressing og skinke">
                 <p>
                     Salat
                 </p>
@@ -94,14 +102,14 @@
         <div class="content">
             <a href="#videreforing6">
                 <img src="medier/FUNPage/taco.jpg" 
-                alt="bilde av en forssen pizza i kjøledisken på dagligvarehandelen">
+                alt="bilde av taco med nachos og ruccola topping i lefse">
                 <p>
                     Taco
                 </p>
             </a>
         </div>
 
-        <div class="sporsmaal">
+        <div class="sporsmaal"><!--nytt spørsmål-->
             <a name="videreforing3">
                 <p>
                     Kanskje bare er glad i pastaretter, så om du hadde valget mellom reker og dumplings, hvem hadde du valgt?
@@ -111,7 +119,7 @@
         <div class="content">
             <a href="#videreforing7">
                 <img src="medier/FUNPage/reker.jpg" 
-                alt="bilde av to spaghetti pakker fra dagligvarehandelen">
+                alt="fat med to tallereker full med reker og grønnsaker">
                 <p>
                     Reker
                 </p>
@@ -120,14 +128,14 @@
         <div class="content">
             <a href="#videreforing8">
                 <img src="medier/FUNPage/dumplings.jpg"
-                alt="bilde av en pakke gilde grillpølser">
+                alt="bilde av flere dumplings på en hvit tallerk">
                 <p>
                     Dumplings
                 </p>
             </a>
         </div>
 
-        <div class="sporsmaal">
+        <div class="sporsmaal"><!--nytt spørsmål-->
             <a name="videreforing4">
                 <p>
                     En god klassikker, men kanskje du er en "all arounder", hva med når du får valget
@@ -138,7 +146,7 @@
         <div class="content">
             <a href="#videreforing9">
                 <img src="medier/FUNPage/blaaskjell.jpg" 
-                alt="bilde av to spaghetti pakker fra dagligvarehandelen">
+                alt="bilde av kokte blåskjell på en hvit tallerk">
                 <p>
                     Blåskjell
                 </p>
@@ -147,14 +155,14 @@
         <div class="content">
             <a href="#videreforing10">
                 <img src="medier/FUNPage/biff.jpg" 
-                alt="bilde av en pakke gilde grillpølser">
+                alt="en biff med grønnsaker pommes-frites og bernaise saus">
                 <p>
                     Biff
                 </p>
             </a>
         </div>
 
-        <div class="sporsmaal">
+        <div class="sporsmaal"><!--nytt spørsmål-->
             <a name="videreforing5">
                 <p>
                     Ett unaturlig valg men hvem dømmer, hva om du hadde valget mellom aspargessuppe og en kake?
@@ -164,7 +172,7 @@
         <div class="content">
             <a href="#videreforing11">
                 <img src="medier/FUNPage/aspargessuppe.jpg" 
-                alt="bilde av to spaghetti pakker fra dagligvarehandelen">
+                alt="en kopp full med aspargessuppe">
                 <p>
                     Aspargessuppe
                 </p>
@@ -173,14 +181,14 @@
         <div class="content">
             <a href="#videreforing12">
                 <img src="medier/FUNPage/kake.jpg" 
-                alt="bilde av en pakke gilde grillpølser">
+                alt="en kake på tallerken med gult fyll og hvit topping">
                 <p>
                     Kake
                 </p>
             </a>
         </div>
 
-        <div class="sporsmaal">
+        <div class="sporsmaal"><!--nytt spørsmål-->
             <a name="videreforing6">
                 <p>
                     Det valget var kanskje ikke så vanskelig, men hva med kebab og is?
@@ -190,7 +198,7 @@
         <div class="content">
             <a href="#videreforing13">
                 <img src="medier/FUNPage/kebab.jpg"
-                alt="bilde av to spaghetti pakker fra dagligvarehandelen">
+                alt="et utydelig bilde av en kebab i folie handholdt">
                 <p>
                     Kebab
                 </p>
@@ -199,44 +207,50 @@
         <div class="content">
             <a href="#videreforing14">
                 <img src="medier/FUNPage/is.jpg"
-                alt="bilde av en pakke gilde grillpølser">
+                alt="fem iskrem begere med holdt i en pentagon form">
                 <p>
                     Is
                 </p>
             </a>
         </div>
 
-        <div class="resultat">
-            <a name="videreforing7">
+        <div class="resultat"> <!--setter klasse til resultat for å gi felles css til resultatet-->
+            <a name="videreforing7"> <!--setter target avslutter targettingen fra en href="#eksempeltekst" ifra tidligere-->
                 <h2>
-                    reke, pasta og pizza
+                    reke, pasta og pizza <!--den rekka quiz-takeren valgte-->
                 </h2>
-                <P>Reke, pasta og pizza. God for seg selv god i kombinasjon. Reke på pizza? Frekt! 
-                    Ring meg på +47 98401184</P>
+                <P>
+                    Reke, pasta og pizza. God for seg selv god i kombinasjon. Reke på pizza? Frekt! 
+                    Ring meg på +47 98401184 <!--falskt mobilnummer-->
+                </P> 
             </a>
-        </div>
+        </div> <!--kode har samme oppbygging i alle resultat klasser-->
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing8">
                 <h2>
                     Dumplings, pasta og pizza
                 </h2>
-               <P>Er ikke så mye å si om deg egentlig, ingen ting skiller deg ut i mengden og 
-                   folk sliter sannsynligvis med å huske hva du heter. </P> 
+                <P>
+                   Er ikke så mye å si om deg egentlig, ingen ting skiller deg ut i mengden og 
+                   folk sliter sannsynligvis med å huske hva du heter.
+                </P> 
             </a>
         </div>
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing9">
                 <h2>
                     blåskjell, pølser og pizza
                 </h2>
-                <p>LEGENDE! Du vet hva du liker og og skammer deg ikke. Dampa blåskjell? Say no more, 
-                    sleng det på en pizza i kombinasjon med pølser så snakker vi fullverdig måltid! </p>
+                <p>
+                    LEGENDE! Du vet hva du liker og og skammer deg ikke. Dampa blåskjell? Say no more, 
+                    sleng det på en pizza i kombinasjon med pølser så snakker vi fullverdig måltid!
+                </p>
             </a>
         </div>
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing10">
                 <h2>
                     biff, pølse og pizza
@@ -248,9 +262,11 @@
             </a>
         </div>
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing11">
-                <h2> aspargessuppe, salat og kylling</h2>
+                <h2>
+                    aspargessuppe, salat og kylling
+                    </h2>
                <p>
                    Wow for en helseguru! Du liker å ta vare på deg selv, men vil anta at 
                    du mest sannsynlig ikke er så artig på fest.. ¨
@@ -260,43 +276,47 @@
             </a>
         </div>
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing12">
-                <h2>kake, salat og kylling</h2>
-                <p>Du er nok en person som lever på kake fem dager i uka, for å så kompansere med
+                <h2>
+                    kake, salat og kylling
+                </h2>
+                <p>
+                    Du er nok en person som lever på kake fem dager i uka, for å så kompansere med
                  salat og kylling resten av tida. Ta et valg, bestem deg for hvem du er, fordi du kan ikke være begge.
                 </p>
             </a>
         </div>
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing13">
-                <h2>kebab, taco og kylling</h2>
-                <p>Tyrkia har gitt deg kebaben, Mexico har gitt deg tacoen og egget har gitt deg kyllingen!
-                    Hvem kom først av kyllingen og egget? Du er et globalisert menneske som omfavner ulike kulturer, hvertfall mat.</p>
-                
+                <h2>
+                    kebab, taco og kylling
+                </h2>
+                <p>
+                    Tyrkia har gitt deg kebaben, Mexico har gitt deg tacoen og egget har gitt deg kyllingen!
+                    Hvem kom først av kyllingen og egget? Du er et globalisert menneske som omfavner ulike kulturer, hvertfall mat.
+                </p>
             </a>
         </div>
 
-        <div class="resultat">
+        <div class="resultat"><!--nytt resultat-->
             <a name="videreforing14">
-                <h2>is, taco og kylling</h2>
-                <p>Det er greit at favorittmaten din er is, taco ELLER kylling. Men alle tre? Voks opp og utfordre deg selv mer.</p>
+                <h2>
+                    is, taco og kylling
+                </h2>
+                <p>
+                    Det er greit at favorittmaten din er is, taco ELLER kylling. Men alle tre? Voks opp og utfordre deg selv mer.
+                </p>
             </a>
         </div>
-
+        
+        <div name="_topp">
+            <p>
+                Start quiz på nytt
+            </p>
+        </div>
 
     </div>
-
-    <!--linke bilder videre til andre bilder for å lage quizzsetup, (NB! ikke skroll, trykk på
-        det som passer deg og siden vil ta deg videre)-->
-
-    <!--Legge inn alternativ tekst, pluss knapp for å gå tilbake til toppen / avbryte quizzen
-        eventuelt ha en startsknapp for å gå til quizzen-->
-    
-    <!--hover for å få beskrivelse av matretten, dytte teksten frem/bildet bakover 
-        med hover for å vise beskrivelsen av maten-->
-
-    <!--Avslutte med juletre og godjul og godt nyttår-->
 </body>
 </html>

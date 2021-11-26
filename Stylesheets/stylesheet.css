@@ -701,6 +701,12 @@ header li a{
     margin-left: 7rem;
 }
 
+.forklaring img{
+    max-width: 880px;
+    width: 50%;
+    height: 30rem;
+}    
+
 /*Styling av boksene */
 .forklaring:nth-child(2){
     display: flex;
