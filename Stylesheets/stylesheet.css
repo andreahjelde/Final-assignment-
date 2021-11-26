@@ -29,8 +29,7 @@ div{
     padding: 2.5rem;
 }
 
-/*---HEADER---*/
-
+/*---HEADER / NAVIGASJONSBAR---*/
 /*Styling for header */
 header{
    background-color: #ffd500;
@@ -262,18 +261,16 @@ text-decoration: underline;
 /*tekststyling*/
 .ref-tekst1 p{
     text-align: center;
-    max-width: 25rem;
-    min-width: 10rem;
 }
+
 .ref-tekst1 h2 {
     text-align: center;
 }
 
 .ref-tekst2 p{
     text-align: center;
-    max-width: 25rem;
-    min-width: 10rem;
 }
+
 .ref-tekst2 h2 {
     text-align: center;
 }
@@ -319,8 +316,6 @@ text-decoration: underline;
 .konklusjon p{
     text-align: center;
     padding-bottom: 7rem;
-    max-width: 25rem;
-    min-width: 10rem;
 }
 
 /*Bildestyling av OsloMet*/
