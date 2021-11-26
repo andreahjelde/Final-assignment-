@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
   <meta charset="UTF-8">
@@ -9,121 +9,109 @@
   <title>Accessibility</title>
 </head>
 
-
-
 <body>
-
-
 <!--Knapper til navigasjon-->
   <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="topicalinformation.html">Topical information</a></li>
-                <li><a href="FUNPage.html">Fun page</a></li>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="reflection.html">Refleksjon</a></li>
+              <li><a href="accessibility.html">Accessibility</a></li>
+              <li><a href="topicalinformation.html">Teknologi og samfunn</a></li>
+              <li><a href="FUNPage.html">Morsom side</a></li>
             </ul>
         </nav>
   </header>
 
- 
-
   <main>
-      
-      
-    <!-- Bilder med forklaring -->
+    <!-- Tekstboks med forklaring av hva accessibility er -->
     <div id="innledning">
-    <h1>Hva er accessibility?</h1> 
-    <p>Det er viktig å tenke på “accessibility” når man utformer en nettside. 
-      “Accessibility” betyr at man tilbyr en tjeneste eller et produkt for alle mennesker 
-      <a href="https://www.interaction-design.org/literature/article/accessibility-usability-for-all">(Soegaard, 2021).</a>  
-      For å kunne inkludere alle, 
-      må utviklerne passe på å implementere ulike løsninger som gjør at alle kan 
-      bruke produktet/tjenesten i tillegg til å ta hensyn til visse aspekter. 
-      Som følge av dette har det blitt utformet retningslinjer med mål om at en 
-      felles manual på hvordan man kan oppnå tilgjengelighet for alle 
-      <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/#text-spacing"> (W3C, 2018).</a> 
+      <h1>Hva er accessibility?</h1> 
+      <p>Det er viktig å tenke på “accessibility” når man utformer en nettside. 
+        “Accessibility” betyr at man tilbyr en tjeneste eller et produkt for alle mennesker 
+        <a href="https://www.interaction-design.org/literature/article/accessibility-usability-for-all">(Soegaard, 2021).</a>  
+        For å kunne inkludere alle, 
+        må utviklerne passe på å implementere ulike løsninger som gjør at alle kan 
+        bruke produktet/tjenesten i tillegg til å ta hensyn til visse aspekter. 
+        Som følge av dette har det blitt utformet retningslinjer med mål om at en 
+        felles manual på hvordan man kan oppnå tilgjengelighet for alle 
+        <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/#text-spacing"> (W3C, 2018).</a> 
 
-      Eksempler på noen av disse retningslinjene er at man må passe på når man skal 
-      velge ut hva slags farger man ønsker å bruke: fargeblinde har for ekesmpel 
-      utfordrninger med å skille mellom rødt og grønt, noe som betyr at det ville 
-      vært dumt å velge en grønn bakgrunnsfarge med rød skrift eller omvendt. 
-      I tillegg til dette, vil det også være nødvendig å bruke stor nok kontrast 
-      mellom tekst og bakgrunn for å gjøre det enklere for svaksynte å se/lese innholdet. 
-      Det å ha stor nok skriftstørrelse og linjeavstand for de med lesevansker er også viktig å huske på, 
-      så de ikke opplever at det blir vanskeligere enn det er, 
-      og for at alle får en behagelig leseropplevelse 
-      <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/#text-spacing"> (W3C, 2018).</a> 
-    </p>
+        Eksempler på noen av disse retningslinjene er at man må passe på når man skal 
+        velge ut hva slags farger man ønsker å bruke: fargeblinde har for ekesmpel 
+        utfordrninger med å skille mellom rødt og grønt, noe som betyr at det ville 
+        vært dumt å velge en grønn bakgrunnsfarge med rød skrift eller omvendt. 
+        I tillegg til dette, vil det også være nødvendig å bruke stor nok kontrast 
+        mellom tekst og bakgrunn for å gjøre det enklere for svaksynte å se/lese innholdet. 
+        Det å ha stor nok skriftstørrelse og linjeavstand for de med lesevansker er også viktig å huske på, 
+        så de ikke opplever at det blir vanskeligere enn det er, 
+        og for at alle får en behagelig leseropplevelse 
+        <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/#text-spacing"> (W3C, 2018).</a> 
+      </p>
     </div>
 
-    
-      <div class="forklaring">
-        <div class="innhold_forklaring">
-        <h2>Hvordan har vi testet nettsiden for accessibility?</h2>
-        <p>
-          For å kontrollere at nettsiden var tilgjengelig for alle tok vi i bruk et verktøy, 
-          en automatisk test som viser om nettsiden er tilgjengelig eller ikke, 
-          og hvilket nivå den ligger på. 
-          Tilgjengeligheten på nettsider blir rangert i tre nivårer: 
-          A, AA, AAA, hvorav nivå AA er et akseptabelt nivå for en nettside å ligge på. 
-          Her må 20 retningslinjer i forhold til å inkludere funksjonshemmede oppfylles, i tillegg til at nivå A også er godkjent. 
-          Det er viktig å presisere at noen av kriteriene for AAA også må være oppfylt for nivå AA.  
-          Disse retningslinjene består blant annet om at man må ha en viss kontrast mellom fargene, 
-          at beskrivelsen til bildene har en betydning, at overskrifter blir brukt på en logisk måte, 
-          etc. (Vicient-Monllaó, 26.10.2021). Vi lastet dermed opp alle sidene, hvorav alle fikk tildelt nivå AA som vist på bildet. 
-          
-        </p>
-      </div>
+    <!-- Tekstboks med forklaring på hvordan vi testet siden for accessibility, samt et bilde som viser resultatet av testen -->
+    <div class="forklaring">
+      <div class="innhold_forklaring">
+          <h2>Hvordan har vi testet nettsiden for accessibility?</h2>
+          <p>
+            For å kontrollere at nettsiden var tilgjengelig for alle tok vi i bruk et verktøy, 
+            en automatisk test som viser om nettsiden er tilgjengelig eller ikke, 
+            og hvilket nivå den ligger på. 
+            Tilgjengeligheten på nettsider blir rangert i tre nivårer: 
+            A, AA, AAA, hvorav nivå AA er et akseptabelt nivå for en nettside å ligge på. 
+            Her må 20 retningslinjer i forhold til å inkludere funksjonshemmede oppfylles, i tillegg til at nivå A også er godkjent. 
+            Det er viktig å presisere at noen av kriteriene for AAA også må være oppfylt for nivå AA.  
+            Disse retningslinjene består blant annet om at man må ha en viss kontrast mellom fargene, 
+            at beskrivelsen til bildene har en betydning, at overskrifter blir brukt på en logisk måte, 
+            etc. (Vicient-Monllaó, 26.10.2021). Vi lastet dermed opp alle sidene, hvorav alle fikk tildelt nivå AA som vist på bildet. 
+          </p>
+        </div>
         <img src="medier/automatisk_sjekk.png" alt="Skjermbilde av automatisk test som ble gjennomført for å se om nettsiden er tilgjengelig/accessible.">
-      
       </div>
       
+    <!-- Tekstboks med forklaring på hva mer vi gjorde samt et bilde som viser validerings-sjekken -->
+    <div class="forklaring">
+        <div class="innhold_forklaring">
+          <h2>Hva mer har vi gjort for å gjøre siden tilgjengelig?</h2>
+          <p>
+            I tillegg til å gjennomføre den automatiske testen, 
+            leste vi oss også opp retningslinjene for tilgjengelighet for nettinnhold. 
+            Dette ble gjort for å kunne være bevisste på hva vi måtte huske på mens vi kodet, 
+            slik at vi fra begynnelsen kunne tenke på å utvikle en nettside som alle kunne bruke. 
+          </p>
+          <p>
+            Vi brukte også en kontrsast sjekker for å kontrollere at fargene vi valgte 
+            ikke gjorde teksten vanskelig å lese, spesielt for svaksynte. 
+            Til tross for at vi hentet mye inspirasjon fra nettsiden til OsloMet, 
+            valgte vi fortsatt å kontrollere kontrasten på fargene for å være 
+            sikre på at det ikke var gjort en feil hos andre. 
+            Vi passet også på å legge til beskrivelser på bildene slik at 
+            de som av ulike årsaker ikke kan se bildet, 
+            kan lese bildeteksten (eller få det opplest dersom de tar i bruk leseassistenter). 
+          </p>
+        </div>
+        <img src="medier/validering_css.png" alt="Skjermbilde av validering av CSS-koden.">
+    </div>
 
-    
-     
+    <!-- Tekstboks med forklaring på hva mer vi gjorde samt et bilde som viser validerings-sjekken -->
       <div class="forklaring">
         <div class="innhold_forklaring">
-        <h2>Hva mer har vi gjort for å gjøre siden tilgjengelig?</h2>
-        <p>
-          I tillegg til å gjennomføre den automatiske testen, 
-          leste vi oss også opp retningslinjene for tilgjengelighet for nettinnhold. 
-          Dette ble gjort for å kunne være bevisste på hva vi måtte huske på mens vi kodet, 
-          slik at vi fra begynnelsen kunne tenke på å utvikle en nettside som alle kunne bruke. 
-        </p>
-        <p>
-          Vi brukte også en kontrsast sjekker for å kontrollere at fargene vi valgte 
-          ikke gjorde teksten vanskelig å lese, spesielt for svaksynte. 
-          Til tross for at vi hentet mye inspirasjon fra nettsiden til OsloMet, 
-          valgte vi fortsatt å kontrollere kontrasten på fargene for å være 
-          sikre på at det ikke var gjort en feil hos andre. 
-          Vi passet også på å legge til beskrivelser på bildene slik at 
-          de som av ulike årsaker ikke kan se bildet, 
-          kan lese bildeteksten (eller få det opplest dersom de tar i bruk leseassistenter). 
-        </p>
-      </div>
-        <img src="medier/validering_css.png" alt="Skjermbilde av validering av CSS-koden.">
-      </div>
-
-  <div class="forklaring">
-    <div class="innhold_forklaring">
-    <p>
-      For å kontrollere at koden vi hadde var grei, 
-      brukte vi en nettside som gjorde en vurdering på den. 
-      Til å begynne med validerte vi html-koden vår, 
-      hvor vi fikk én feilmelding. 
-      Denne feilmedlingen var enkel å rette opp i, 
-      da det bare var at vi hadde glemt å avslutte “main” og "main". 
-      Etter at denne feilen ble rette på, 
-      validerte vi html-koden på ny, og vi nå ingen feilmeldinger. 
-      Så gjorde vi det samme for CSS-koden som viste oss at vi hadde glemt å avslutte noen av style-elementene. 
-      Vi fikk enkelt rettet opp i feilen, ettersom at det sto tydelig testen hvor feilen lå. 
-      Feilen ble rettet opp i, og validatoren viste nå ingen flere feil. 
-       
-    </p>
-    </div>
-        <img src="medier/validering_html.png" alt="Skjermbilde av validering av HTML-sidene/koden.">
+          <p>
+            For å kontrollere at koden vi hadde var grei, 
+            brukte vi en nettside som gjorde en vurdering på den. 
+            Til å begynne med validerte vi html-koden vår, 
+            hvor vi fikk én feilmelding. 
+            Denne feilmedlingen var enkel å rette opp i, 
+            da det bare var at vi hadde glemt å avslutte “main” og "main". 
+            Etter at denne feilen ble rette på, 
+            validerte vi html-koden på ny, og vi nå ingen feilmeldinger. 
+            Så gjorde vi det samme for CSS-koden som viste oss at vi hadde glemt å avslutte noen av style-elementene. 
+            Vi fikk enkelt rettet opp i feilen, ettersom at det sto tydelig testen hvor feilen lå. 
+            Feilen ble rettet opp i, og validatoren viste nå ingen flere feil. 
+          </p>
+        </div>
+       <img src="medier/validering_html.png" alt="Skjermbilde av validering av HTML-sidene/koden.">
       </div>
     </main>
   </body>
