@@ -537,64 +537,6 @@ header{
 }
 
 
-/*---------------Reflelction-side---------------*/
-/*---Introduksjon---*/
-/*Plassering av elementene*/
-.introduksjon2{
-   flex-direction: row;
-}
-
-/*Styling av tekst*/
-.introduksjon2 h1 {
-    text-align: right;
- 
-}
-
-.introduksjon2 p {
-    text-align: right;
-    padding-bottom: 7rem;
-    
-}
-
-/*---Hoveddel---*/
-/*plassering av elementene*/
-.refleksjon:nth-child(2){
-    flex-direction: row-reverse;
-}
-
-.refleksjon:nth-child(3){
-   flex-direction: row;
-}
-
-/*tekststyling*/
-.ref-tekst1 p{
-    text-align: left;
-    max-width: 30rem;
-}
-
-.ref-tekst1 h2 {
-    text-align: left;
-}
-
-.ref-tekst2 p{
-    text-align: right;
-    max-width: 30rem;
-}
-
-.ref-tekst2 h2 {
-    text-align: right;
-}
-
-/*styling av tekstbilder*/
-.refleksjon img {
-    width: 200px;
-}
-
-.konklusjon p{
-    max-width: 30rem;
-}
-
-
 /*---------------Accessibility-side---------------*/
 #innledning h1{
     display: flex;
@@ -664,7 +606,62 @@ header li a{
     min-width: 30rem;
 }
 
-
+/*---------------Reflelction-side---------------*/
+/*---Introduksjon---*/
+/*Plassering av elementene*/
+.introduksjon2{
+    flex-direction: row;
+ }
+ 
+ /*Styling av tekst*/
+ .introduksjon2 h1 {
+     text-align: right;
+  
+ }
+ 
+ .introduksjon2 p {
+     text-align: right;
+     padding-bottom: 7rem;
+     
+ }
+ 
+ /*---Hoveddel---*/
+ /*plassering av elementene*/
+ .refleksjon:nth-child(2){
+     flex-direction: row-reverse;
+ }
+ 
+ .refleksjon:nth-child(3){
+    flex-direction: row;
+ }
+ 
+ /*tekststyling*/
+ .ref-tekst1 p{
+     text-align: left;
+     max-width: 30rem;
+ }
+ 
+ .ref-tekst1 h2 {
+     text-align: left;
+ }
+ 
+ .ref-tekst2 p{
+     text-align: right;
+     max-width: 30rem;
+ }
+ 
+ .ref-tekst2 h2 {
+     text-align: right;
+ }
+ 
+ /*styling av tekstbilder*/
+ .refleksjon img {
+     width: 200px;
+ }
+ 
+ .konklusjon p{
+     max-width: 30rem;
+ }
 /*---------------Accessibility---------------*/
 #innledning p{
     margin-right: 7rem;
