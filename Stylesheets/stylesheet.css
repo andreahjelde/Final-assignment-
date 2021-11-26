@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    font-size: 24;
+    font-size: 24px;
 }
 
 p{
@@ -282,7 +282,7 @@ text-decoration: underline;
 
 /*styling av tekstbilder*/
 .refleksjon img {
-    width: 50x;
+    width: 50px;
     height: 300px;
     display: block; 
 }
@@ -340,6 +340,8 @@ padding: 3rem;
 /*Styling av overskriften og innledning*/
 #innledning h1{
    padding-bottom: 1rem;
+   margin-right: 2rem;
+    margin-left: 2rem;
 } 
 
 #innledning p{
@@ -437,7 +439,7 @@ h1{
     font-size: 42px;
 }
 h2{
-    font-size: 32;
+    font-size: 32px;
 }
 
 p{
@@ -473,13 +475,12 @@ header{
 /*justering av plassering*/
 .introduksjon{
     background-color: white;
-    border:none;
+    border: none;
 }
 
 /*styling av tekst*/
 .introduksjon h1{
     padding-top: 3rem;
-    font-size: 250%;
 }
 
 .introduksjon p{
@@ -519,8 +520,8 @@ header{
     max-width: 15rem;
     min-width: 10rem;
     background-color: #ffd500;
-    
 }
+
 .for-tekst1 h2{
     text-align: left;
     background-color: #ffd500;
@@ -546,7 +547,7 @@ header{
 /*Styling av tekst*/
 .introduksjon2 h1 {
     text-align: right;
-    padding-top: 0rem; 
+ 
 }
 
 .introduksjon2 p {
@@ -596,11 +597,13 @@ header{
 
 /*---------------Accessibility-side---------------*/
 #innledning h1{
-    padding-bottom: 1rem;
-    align-items: center;
+    display: flex;
+    justify-content: center;
  } 
 
 .forklaring h2{
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,7 +615,9 @@ header{
 }
 .forklaring img{
     max-width: 880px;
+    width: 100%;
     height: 30rem;
+    align-items: center;
 }
 
 
@@ -636,7 +641,7 @@ h1{
 }
 
 h2{
-    font-size: 34;
+    font-size: 34px;
 }
 
 p{
@@ -665,46 +670,29 @@ header li a{
     margin-right: 7rem;
     margin-left: 7rem;
 }
-#innledning h1{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /*Styling av boksene */
 .forklaring:nth-child(2){
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    background-color: #ffd500;
+    justify-content: center;
 }
 
 .forklaring:nth-child(3){
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .forklaring:nth-child(4){
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    background-color: #ffd500;
+    justify-content: center;
+   
 }
 
-.forklaring img{
-    max-width: 880px;
-    width: 50%;
-    height: 30rem;
-}
 
-/*---------------TOPICAL INFORMATION-side---------------*/
-#kilder{
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
 }
