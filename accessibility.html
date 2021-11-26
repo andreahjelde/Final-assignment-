@@ -47,11 +47,11 @@
 
       Eksempler på noen av disse retningslinjene er at man må passe på når man skal 
       velge ut hva slags farger man ønsker å bruke: fargeblinde har for ekesmpel 
-      utfordrninger med å skille mellom rød og grønn, noe som betyr at det ville 
+      utfordrninger med å skille mellom rødt og grønt, noe som betyr at det ville 
       vært dumt å velge en grønn bakgrunnsfarge med rød skrift eller omvendt. 
       I tillegg til dette, vil det også være nødvendig å bruke stor nok kontrast 
-      på mellom tekst og bakgrunn for å gjøre det enklere for svaksynte å se/lese innholdet. 
-      Samt stor nok skriftstørrelse og linjeavstand for de med lesevansker, 
+      mellom tekst og bakgrunn for å gjøre det enklere for svaksynte å se/lese innholdet. 
+      Det å ha stor nok skriftstørrelse og linjeavstand for de med lesevansker er også viktig å huske på, 
       så de ikke opplever at det blir vanskeligere enn det er, 
       og for at alle får en behagelig leseropplevelse 
       <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/#text-spacing"> (W3C, 2018).</a> 
@@ -64,18 +64,19 @@
         <h2>Hvordan har vi testet nettsiden for accessibility?</h2>
         <p>
           For å kontrollere at nettsiden var tilgjengelig for alle tok vi i bruk et verktøy, 
-          en automatisk test, som viser om nettsiden er tilgjengelig eller ikke, 
+          en automatisk test som viser om nettsiden er tilgjengelig eller ikke, 
           og hvilket nivå den ligger på. 
           Tilgjengeligheten på nettsider blir rangert i tre nivårer: 
           A, AA, AAA, hvorav nivå AA er et akseptabelt nivå for en nettside å ligge på. 
-          Her må 20 retningslinjer i forhold til å inkludere funksjonshemmede oppfylles. 
+          Her må 20 retningslinjer i forhold til å inkludere funksjonshemmede oppfylles, i tillegg til at nivå A også er godkjent. 
           Det er viktig å presisere at noen av kriteriene for AAA også må være oppfylt for nivå AA.  
           Disse retningslinjene består blant annet om at man må ha en viss kontrast mellom fargene, 
           at beskrivelsen til bildene har en betydning, at overskrifter blir brukt på en logisk måte, 
-          etc. (Carlos -----, HJELP  ).  Vi lastet dermed opp alle sidene, hvorav alle fikk tildelt nivå AA. 
+          etc. (Vicient-Monllaó, 26.10.2021). Vi lastet dermed opp alle sidene, hvorav alle fikk tildelt nivå AA som vist på bildet. 
+          
         </p>
       </div>
-        <img src="medier/dog.jpg" alt="Bilde 1">
+        <img src="medier/automatisk_sjekk.png" alt="Skjermbilde av automatisk test som ble gjennomført for å se om nettsiden er tilgjengelig/accessible.">
       
       </div>
       
@@ -102,7 +103,7 @@
           kan lese bildeteksten (eller få det opplest dersom de tar i bruk leseassistenter). 
         </p>
       </div>
-        <img src="medier/dog.jpg" alt="Bilde 2">
+        <img src="medier/validering_css.png" alt="Skjermbilde av validering av CSS-koden.">
       </div>
 
   <div class="forklaring">
@@ -113,13 +114,16 @@
       Til å begynne med validerte vi html-koden vår, 
       hvor vi fikk én feilmelding. 
       Denne feilmedlingen var enkel å rette opp i, 
-      da det bare var at vi hadde glemt å avslutte “main”. 
+      da det bare var at vi hadde glemt å avslutte “main” og "main". 
       Etter at denne feilen ble rette på, 
       validerte vi html-koden på ny, og vi nå ingen feilmeldinger. 
-      Så gjorde vi det samme for CSS-koden. Her fikk vi ingen feilmeldinger. 
+      Så gjorde vi det samme for CSS-koden som viste oss at vi hadde glemt å avslutte noen av style-elementene. 
+      Vi fikk enkelt rettet opp i feilen, ettersom at det sto tydelig testen hvor feilen lå. 
+      Feilen ble rettet opp i, og validatoren viste nå ingen flere feil. 
+       
     </p>
     </div>
-        <img src="medier/dog.jpg" alt="Bilde 3">
+        <img src="medier/validering_html.png" alt="Skjermbilde av validering av HTML-sidene/koden.">
       </div>
     </main>
   </body>

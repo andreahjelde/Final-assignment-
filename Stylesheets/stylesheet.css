@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    font-size: 24;
+    font-size: 24px;
 }
 
 p{
@@ -29,8 +29,7 @@ div{
     padding: 2.5rem;
 }
 
-/*---HEADER---*/
-
+/*---HEADER / NAVIGASJONSBAR---*/
 /*Styling for header */
 header{
    background-color: #ffd500;
@@ -262,18 +261,16 @@ text-decoration: underline;
 /*tekststyling*/
 .ref-tekst1 p{
     text-align: center;
-    max-width: 25rem;
-    min-width: 10rem;
 }
+
 .ref-tekst1 h2 {
     text-align: center;
 }
 
 .ref-tekst2 p{
     text-align: center;
-    max-width: 25rem;
-    min-width: 10rem;
 }
+
 .ref-tekst2 h2 {
     text-align: center;
 }
@@ -282,7 +279,7 @@ text-decoration: underline;
 
 /*styling av tekstbilder*/
 .refleksjon img {
-    width: 50x;
+    width: 50px;
     height: 300px;
     display: block; 
 }
@@ -319,8 +316,6 @@ text-decoration: underline;
 .konklusjon p{
     text-align: center;
     padding-bottom: 7rem;
-    max-width: 25rem;
-    min-width: 10rem;
 }
 
 /*Bildestyling av OsloMet*/
@@ -340,6 +335,8 @@ padding: 3rem;
 /*Styling av overskriften og innledning*/
 #innledning h1{
    padding-bottom: 1rem;
+   margin-right: 2rem;
+    margin-left: 2rem;
 } 
 
 #innledning p{
@@ -437,7 +434,7 @@ h1{
     font-size: 42px;
 }
 h2{
-    font-size: 32;
+    font-size: 32px;
 }
 
 p{
@@ -473,13 +470,12 @@ header{
 /*justering av plassering*/
 .introduksjon{
     background-color: white;
-    border:none;
+    border: none;
 }
 
 /*styling av tekst*/
 .introduksjon h1{
     padding-top: 3rem;
-    font-size: 250%;
 }
 
 .introduksjon p{
@@ -519,8 +515,8 @@ header{
     max-width: 15rem;
     min-width: 10rem;
     background-color: #ffd500;
-    
 }
+
 .for-tekst1 h2{
     text-align: left;
     background-color: #ffd500;
@@ -536,71 +532,15 @@ header{
 }
 
 
-/*---------------Reflelction-side---------------*/
-/*---Introduksjon---*/
-/*Plassering av elementene*/
-.introduksjon2{
-   flex-direction: row;
-}
-
-/*Styling av tekst*/
-.introduksjon2 h1 {
-    text-align: right;
-    padding-top: 0rem; 
-}
-
-.introduksjon2 p {
-    text-align: right;
-    padding-bottom: 7rem;
-    
-}
-
-/*---Hoveddel---*/
-/*plassering av elementene*/
-.refleksjon:nth-child(2){
-    flex-direction: row-reverse;
-}
-
-.refleksjon:nth-child(3){
-   flex-direction: row;
-}
-
-/*tekststyling*/
-.ref-tekst1 p{
-    text-align: left;
-    max-width: 30rem;
-}
-
-.ref-tekst1 h2 {
-    text-align: left;
-}
-
-.ref-tekst2 p{
-    text-align: right;
-    max-width: 30rem;
-}
-
-.ref-tekst2 h2 {
-    text-align: right;
-}
-
-/*styling av tekstbilder*/
-.refleksjon img {
-    width: 200px;
-}
-
-.konklusjon p{
-    max-width: 30rem;
-}
-
-
 /*---------------Accessibility-side---------------*/
 #innledning h1{
-    padding-bottom: 1rem;
-    align-items: center;
+    display: flex;
+    justify-content: center;
  } 
 
 .forklaring h2{
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,7 +552,9 @@ header{
 }
 .forklaring img{
     max-width: 880px;
+    width: 100%;
     height: 30rem;
+    align-items: center;
 }
 
 
@@ -636,7 +578,7 @@ h1{
 }
 
 h2{
-    font-size: 34;
+    font-size: 34px;
 }
 
 p{
@@ -659,52 +601,96 @@ header li a{
     min-width: 30rem;
 }
 
-
+/*---------------Reflelction-side---------------*/
+/*---Introduksjon---*/
+/*Plassering av elementene*/
+.introduksjon2{
+    flex-direction: row;
+ }
+ 
+ /*Styling av tekst*/
+ .introduksjon2 h1 {
+     text-align: right;
+  
+ }
+ 
+ .introduksjon2 p {
+     text-align: right;
+     padding-bottom: 7rem;
+     
+ }
+ 
+ /*---Hoveddel---*/
+ /*plassering av elementene*/
+ .refleksjon:nth-child(2){
+     flex-direction: row-reverse;
+ }
+ 
+ .refleksjon:nth-child(3){
+    flex-direction: row;
+ }
+ 
+ /*tekststyling*/
+ .ref-tekst1 p{
+     text-align: left;
+     max-width: 30rem;
+ }
+ 
+ .ref-tekst1 h2 {
+     text-align: left;
+ }
+ 
+ .ref-tekst2 p{
+     text-align: right;
+     max-width: 30rem;
+ }
+ 
+ .ref-tekst2 h2 {
+     text-align: right;
+ }
+ 
+ /*styling av tekstbilder*/
+ .refleksjon img {
+     width: 200px;
+ }
+ 
+ .konklusjon p{
+     max-width: 30rem;
+ }
 /*---------------Accessibility---------------*/
 #innledning p{
     margin-right: 7rem;
     margin-left: 7rem;
-}
-#innledning h1{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Styling av boksene */
-.forklaring:nth-child(2){
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffd500;
-}
-
-.forklaring:nth-child(3){
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-.forklaring:nth-child(4){
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffd500;
 }
 
 .forklaring img{
     max-width: 880px;
     width: 50%;
     height: 30rem;
+}    
+
+/*Styling av boksene */
+.forklaring:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-/*---------------TOPICAL INFORMATION-side---------------*/
-#kilder{
-    margin-left: 10rem;
-    margin-right: 10rem;
+.forklaring:nth-child(3){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
 }
+
+.forklaring:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
 }
