@@ -7,32 +7,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+                        /*-------LITEN SKJERM------*/
+                        /*---- Screens < 600px ----*/
+
+/*------Generell styling-----*/
 /* -- styling til skriftstørrelse og skrifttype--*/
-p{
-    font-size: 14px;
-    line-height: 1.5rem;
+h1{
+    font-size: 36px;
 }
 
-/* Margin til alle div-ene*/
+h2{
+    font-size: 24;
+}
+
+p{
+    font-size: 18px;
+    line-height: 2.5rem;
+}
+
 div{
     padding: 2.5rem;
 }
-
-footer{
-    height: 5vh;
-    background-color: black;
-}
-
-
-
-
-
-
-
-
-/*-------LITEN SKJERM------*/
-/*---- Screens < 600px ----*/
-
 
 /*---HEADER---*/
 
@@ -68,6 +63,7 @@ header li{
 header li a{
     color: black;
     text-decoration: none;
+    font-size: 18px;
     
 }
 
@@ -77,12 +73,9 @@ border-bottom: solid 2px black;
 
 
 
-
-
-/*----Home-Page----*/
-
- /*justering av plassering*/
-
+/*---------------HOME-PAGE---------------*/
+/*---Introduksjon---*/
+/*justering av plassering*/
 .introduksjon{
     display: flex;
     flex-direction: column;
@@ -105,20 +98,21 @@ border-bottom: solid 2px black;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 10rem;
+    
     max-width: 400px;
     min-width: 200px;   
+    
+    /*max-width: 600px;
+    min-width: 400px;  */
 }
 
 /*styling av bildet*/  
-
 .introduksjon img{
     width: 400px;
-    
 }
 
-
- /*Justering av plassering på elementene til forhåndsvisningen*/
- .forhåndsvisning:nth-child(2){
+/* justering av forhåndsvisningene*/
+.forhåndsvisning:nth-child(2){
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -149,7 +143,6 @@ border-bottom: solid 2px black;
 
 }
 
-
 .forhåndsvisning:nth-child(5){
     display: flex;
     justify-content:center;
@@ -168,6 +161,7 @@ border-bottom: solid 2px black;
     min-width: 20rem;
     background-color: white;
 }
+
 .for-tekst1 h2{
     text-align: center;
     background-color: white;
@@ -211,8 +205,7 @@ text-decoration: underline;
 }
 
 
-/*----Reflection-Page----*/
-
+/*---------------Reflection-Side---------------*/
 
 /*---Introduksjon---*/
 
@@ -294,17 +287,14 @@ text-decoration: underline;
     display: block; 
 }
 
-
 /*---Konklusjon---*/
-
 /*plassering av elementene*/
 .konklusjon{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:#ffd500;
-   
+    background-color:#ffd500; 
 }
 
 /*Styling av tekst*/
@@ -346,35 +336,32 @@ padding: 3rem;
 
 
 
-/*----ACCESSIBILITY-PAGE---- */
+/*---------------ACCESSIBILITY-SIDE---------------*/
 /*Styling av overskriften og innledning*/
 #innledning h1{
    padding-bottom: 1rem;
 } 
 
 #innledning p{
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-left:2rem;
+    margin-right: 2rem;
 }
 
-#innledning{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/*Styling av teskten*/
-.forklaring p{
-    line-height: 1.5rem;
-    padding-bottom: 1rem;
-}
+/*Styling av referanser i teksten*/
+#innledning a{
+    text-decoration: none;
+ }
+ 
+#innledning a:hover{
+     color: blue;
+ }
 
 /*Styling av bilder */
 .forklaring img{
     height: 15rem;  
     width: 100%;
     max-width: 520px;
+    padding-top: 1rem;
 }
 
 /*Bruker pseudo-element for å veksle gul og hvit-farge på tekstbokser*/
@@ -389,19 +376,22 @@ padding: 3rem;
 
 
 
-/*----TOPICAL INFORMATION-PAGE----*/
+
+/*---------------TOPICAL INFORMATION-SIDE---------------*/
 #overskrift1{
-margin-left: 2rem;
-margin-right: 2rem;
 margin-top: 2rem;
 
 padding-top: 2rem;
 padding-left: 2rem;
 padding-right: 2rem;
 
-display: flex;
-justify-content: center;
-align-items: center;
+text-align: center;
+}
+
+.oppgavetekst{
+max-width: 80%;
+margin-left: auto;
+margin-right: auto;
 }
 
 /*Styling av referanser i teksten*/
@@ -414,6 +404,8 @@ align-items: center;
 }
 
 /*Styling av kildeliste*/
+
+
 #kilder li{
     list-style-type: none;
 }
@@ -423,32 +415,43 @@ align-items: center;
     padding: 1rem;
     text-decoration: none;
     display: block;
+    font-size: 20px;
 }
 
 #kilder li a:hover{
     background-color: #ffd500;
-    tab-size: 5px;
 }
 
 
 
-
-
-/*--------MEDIUM STORE SKJERMER--------*/
-/* ---Screens 600px –960 px ----*/
+/*-----------------------------------------------------------------------------------*/
+                        /*--------MEDIUM STORE SKJERMER--------*/
+                        /* ---Screens 600px –960 px ----*/
 
 @media screen and (min-width: 600px){
+/*---------------Generell styling---------------*/
+header li a{
+    font-size: 20px;
+}
+h1{
+    font-size: 42px;
+}
+h2{
+    font-size: 32;
+}
 
+p{
+    font-size: 22px;
+}
 
 /*---Header---*/
-
 /*Styling for navigasjonsbaren */
 header{
     height: fit-content;
     min-height: 2rem;
  }
  
- header ul{                       /* bruker flexbox for å plassere knappene til navigasjonsboksen*/
+ header ul{                       
      display:flex;
      justify-content: center;
      align-items: center;
@@ -467,7 +470,6 @@ header{
 /*----HOME-PAGE----*/
 
 /*Introduksjon*/
-
 /*justering av plassering*/
 .introduksjon{
     background-color: white;
@@ -487,7 +489,6 @@ header{
     
 
 /* justering av forhåndsvisningene*/
-
 .forhåndsvisning:nth-child(2){
     flex-direction: row-reverse;
     background-color:#ffd500;
@@ -505,15 +506,13 @@ header{
     background-color:#ffd500;
     border:none;
 }
+
 .forhåndsvisning:nth-child(5){
     flex-direction: row;
     background-color:white;
     border:none;
 }
 
-
-
-/*justering av tekst til forhåndsvisningene*/
 /* /*Justering på teksten*/
 .for-tekst1 p{
     text-align: left;
@@ -537,16 +536,11 @@ header{
 }
 
 
-
-/*----Reflection-Page----*/
-
-
+/*---------------Reflelction-side---------------*/
 /*---Introduksjon---*/
-
 /*Plassering av elementene*/
 .introduksjon2{
    flex-direction: row;
-   
 }
 
 /*Styling av tekst*/
@@ -562,11 +556,11 @@ header{
 }
 
 /*---Hoveddel---*/
-
 /*plassering av elementene*/
 .refleksjon:nth-child(2){
     flex-direction: row-reverse;
 }
+
 .refleksjon:nth-child(3){
    flex-direction: row;
 }
@@ -576,6 +570,7 @@ header{
     text-align: left;
     max-width: 30rem;
 }
+
 .ref-tekst1 h2 {
     text-align: left;
 }
@@ -584,56 +579,100 @@ header{
     text-align: right;
     max-width: 30rem;
 }
+
 .ref-tekst2 h2 {
     text-align: right;
 }
-
 
 /*styling av tekstbilder*/
 .refleksjon img {
     width: 200px;
 }
 
-
-
-
 .konklusjon p{
     max-width: 30rem;
 }
 
+
+/*---------------Accessibility-side---------------*/
+#innledning h1{
+    padding-bottom: 1rem;
+    align-items: center;
+ } 
+
+.forklaring h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling av teskten*/
+.forklaring p{
+    padding: 1rem;
+}
+.forklaring img{
+    max-width: 880px;
+    height: 30rem;
+}
+
+
+/*---------------TOPICAL INFORMATION-side---------------*/
+#kilder{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 }
 
 
 
 
-
-
-
-/*----------STORE SKJERMER--------*/
-/* ---Screens >960 px--- */
+/*-----------------------------------------------------------------------------------*/
+                        /*----------STORE SKJERMER--------*/
+                        /* ---Screens >960 px--- */
 @media screen and (min-width: 960px){
+/*---------------Generell styling---------------*/
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 34;
+}
+
+p{
+    font-size: 24px;
+}
+
+header li a{
+    font-size: 24px;
+}
 
 /*----Home-Page---*/
-
 /*Justerer bredden på teksten til forhåndsvisningene*/
 .for-tekst1 p{
     max-width: 40rem;
     min-width: 30rem;
 }
+
 .for-tekst2 p{
     max-width: 40rem;
     min-width: 30rem;
 }
 
 
-
-
-/*---Accessibility---*/
+/*---------------Accessibility---------------*/
 #innledning p{
     margin-right: 7rem;
     margin-left: 7rem;
 }
-/*Styling av bilder */
+#innledning h1{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling av boksene */
 .forklaring:nth-child(2){
     display: flex;
     flex-direction: row;
@@ -663,8 +702,9 @@ header{
     height: 30rem;
 }
 
-
-
-
-
+/*---------------TOPICAL INFORMATION-side---------------*/
+#kilder{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 }
